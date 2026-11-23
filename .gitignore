@@ -1,0 +1,17 @@
+/.gradle/
+/.kotlin/
+/.idea/
+**/build/
+*.iml
+local.properties
+*.apk
+*.aab
+*.jks
+*.keystore
+*.pem
+*.key
+.env
+.env.*
+google-services.json
+*service-account*.json
+*credentials*.json
