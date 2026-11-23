@@ -1,0 +1,52 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto" android:layout_width="match_parent"
+    android:layout_height="match_parent" android:fillViewport="true">
+    <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content"
+        android:orientation="vertical" android:paddingHorizontal="20dp" android:paddingBottom="20dp"
+        android:focusableInTouchMode="true">
+        <FrameLayout android:layout_width="match_parent" android:layout_height="52dp">
+            <TextView android:layout_width="match_parent" android:layout_height="wrap_content" android:text="Öğrenci Girişi" android:textColor="@color/ink" android:textSize="18sp" android:layout_gravity="center" android:gravity="center" />
+            <TextView android:id="@+id/back" android:layout_width="48dp" android:layout_height="match_parent"
+                android:text="‹" android:textSize="29sp" android:textColor="@color/ink"
+                android:gravity="center_vertical" android:contentDescription="Geri"
+                android:background="?attr/selectableItemBackgroundBorderless" android:focusable="true" />
+        </FrameLayout>
+        <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content"
+            android:minHeight="100dp" android:gravity="center" android:orientation="vertical"
+            android:padding="12dp" android:background="@drawable/student_header">
+            <TextView android:layout_width="match_parent" android:layout_height="wrap_content" android:text="Öğrenci Hesabı" android:textColor="@color/ink" android:textSize="22sp" android:gravity="center" />
+            <TextView android:layout_width="match_parent" android:layout_height="wrap_content"
+                android:gravity="center" android:layout_marginTop="17dp" android:textSize="14sp"
+                android:textColor="@color/muted" android:text="Hesabına giriş yap." />
+        </LinearLayout>
+        <Space android:layout_width="1dp" android:layout_height="4dp" />
+        <TextView android:layout_width="match_parent" android:layout_height="wrap_content" android:text="E-posta" android:textColor="@color/ink" android:textSize="13sp" android:labelFor="@+id/email" android:layout_marginTop="14dp" />
+ <com.google.android.material.textfield.TextInputLayout style="@style/StudentField"
+     android:layout_width="match_parent" android:layout_height="wrap_content"
+     android:layout_marginTop="5dp" >
+     <com.google.android.material.textfield.TextInputEditText android:id="@id/email"
+         android:layout_width="match_parent" android:layout_height="wrap_content"
+         android:minHeight="56dp" android:inputType="textEmailAddress" android:maxLines="1"
+         android:hint="E-posta adresin" android:textSize="16sp" android:saveEnabled="false" />
+ </com.google.android.material.textfield.TextInputLayout>
+ <TextView android:layout_width="match_parent" android:layout_height="wrap_content" android:text="Şifre" android:textColor="@color/ink" android:textSize="13sp" android:labelFor="@+id/password" android:layout_marginTop="14dp" />
+ <com.google.android.material.textfield.TextInputLayout style="@style/StudentField"
+     android:layout_width="match_parent" android:layout_height="wrap_content"
+     android:layout_marginTop="5dp" app:endIconMode="password_toggle">
+     <com.google.android.material.textfield.TextInputEditText android:id="@id/password"
+         android:layout_width="match_parent" android:layout_height="wrap_content"
+         android:minHeight="56dp" android:inputType="textPassword" android:maxLines="1"
+         android:hint="" android:textSize="16sp" android:saveEnabled="false" />
+ </com.google.android.material.textfield.TextInputLayout>
+ 
+        <com.google.android.material.button.MaterialButton android:id="@+id/forgot"
+    style="@style/StudentLink" android:layout_width="match_parent"
+    android:layout_height="wrap_content" android:layout_marginTop="12dp" android:text="Şifremi unuttum" /><com.google.android.material.button.MaterialButton android:id="@+id/submit"
+    style="@style/StudentSubmit" android:layout_width="match_parent"
+    android:layout_height="wrap_content" android:layout_marginTop="8dp" android:text="Giriş Yap" /><com.google.android.material.button.MaterialButton android:id="@+id/switch_screen"
+    style="@style/StudentLink" android:layout_width="match_parent"
+    android:layout_height="wrap_content" android:layout_marginTop="14dp" android:text="Hesabın yok mu? Kayıt Ol" />
+        <TextView android:id="@+id/feedback" android:layout_width="match_parent" android:layout_height="wrap_content"
+            android:gravity="center" android:textColor="@color/ink" android:accessibilityLiveRegion="polite" />
+    </LinearLayout>
+</ScrollView>
