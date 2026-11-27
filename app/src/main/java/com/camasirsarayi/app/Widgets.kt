@@ -244,8 +244,8 @@ internal fun MainActivity.confirm(title: String, description: String, action: ()
 internal fun MainActivity.choose(title: String, values: List<String>, action: (Int) -> Unit) {
     AlertDialog.Builder(this).setTitle(title).setItems(values.toTypedArray()) { _, position -> action(position) }.show()
 }
-internal fun clock(time: Long): String = if (time <= 0) "—" else SimpleDateFormat("HH:mm", Locale("tr", "TR")).format(Date(time))
-internal fun date(time: Long): String = if (time <= 0) "—" else SimpleDateFormat("d MMM yyyy · HH:mm", Locale("tr", "TR")).format(Date(time))
+internal fun clock(time: Long): String = if (time <= 0) "—" else SimpleDateFormat("HH:mm", Locale.forLanguageTag("tr-TR")).format(Date(time))
+internal fun date(time: Long): String = if (time <= 0) "—" else SimpleDateFormat("d MMM yyyy · HH:mm", Locale.forLanguageTag("tr-TR")).format(Date(time))
 internal fun countdownText(milliseconds: Long): String {
     val seconds = ((milliseconds + 999).coerceAtLeast(0)) / 1000
     return if (seconds >= 3600) "%02d:%02d:%02d".format(Locale.ROOT, seconds / 3600, seconds / 60 % 60, seconds % 60)
