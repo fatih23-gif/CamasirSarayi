@@ -1,1 +1,13 @@
-<resources><string name="app_name">Çamaşır Sarayı • Hafta 2</string></resources>
+<resources>
+    <string name="app_name">Çamaşır Sarayı</string>
+    <string name="demo_notice">Demo · Örnek veriler</string>
+    <string name="home">Ana Sayfa</string>
+    <string name="panel">Panel</string>
+    <string name="machines">Makineler</string>
+    <string name="queue">Sıra</string>
+    <string name="history">Geçmiş</string>
+    <string name="faults">Arızalar</string>
+    <string name="profile">Profil</string>
+    <string name="back">Geri</string>
+    <string name="notifications">Bildirimler</string>
+</resources>

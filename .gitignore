@@ -1,6 +1,8 @@
-/.gradle/
+﻿/.gradle/
 /.kotlin/
 /.idea/
+/.wrangler/
+/output/
 **/build/
 *.iml
 local.properties
@@ -10,8 +12,17 @@ local.properties
 *.keystore
 *.pem
 *.key
+*.p8
+*.p12
 .env
 .env.*
+functions/.env*
+.dev.vars*
 google-services.json
+serviceAccount*.json
 *service-account*.json
 *credentials*.json
+node_modules/
+*.log
+
+/functions/seed.js

@@ -1,0 +1,13 @@
+rules_version = '2';
+service cloud.firestore {
+  match /databases/{database}/documents {
+    // Bu koleksiyonda yalnızca yurt adı, il, ilçe ve aktiflik durumu tutulur.
+    match /dormCatalog/{dormId} {
+      allow list: if request.auth != null
+        && resource.data.active == true
+        && request.query.limit <= 100;
+    }
+    // Üyelik, katılım kodu ve sıra belgelerine telefon doğrudan erişemez.
+    match /{document=**} { allow read, write: if false; }
+  }
+}

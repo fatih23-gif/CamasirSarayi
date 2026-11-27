@@ -1,0 +1,9 @@
+<resources>
+    <color name="page">#101B2A</color>
+    <color name="card">#19283A</color>
+    <color name="ink">#E9F0FA</color>
+    <color name="muted">#ABC0D6</color>
+    <color name="line">#354962</color>
+    <color name="nav_indicator">#29415E</color>
+    <color name="nav_active">#BDD5F3</color>
+</resources>
